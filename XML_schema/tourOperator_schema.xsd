@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid Studio 2021 (https://www.liquid-technologies.com)-->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="TourOperator">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Operation" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Type" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="From" type="xs:string" minOccurs="0" />
+                                        <xs:element name="To" type="xs:string" minOccurs="0" />
+                                    </xs:sequence>
+                                    <xs:attribute name="OperationType" type="xs:string" use="optional" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Price" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Value" type="xs:unsignedShort" minOccurs="0" />
+                                    </xs:sequence>
+                                    <xs:attribute name="CurrencyCode" type="xs:string" use="optional" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="CurrencyExchangeService" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="IsAvailable" type="xs:boolean" minOccurs="0" />
+                                        <xs:element name="From" type="xs:string" minOccurs="0" />
+                                        <xs:element name="To" type="xs:string" minOccurs="0" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Insurance" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="HaveInsurance" type="xs:boolean" minOccurs="0" />
+                                        <xs:element name="InsuranceNumber" type="xs:unsignedInt" minOccurs="0" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Period" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Duration" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Days" type="xs:unsignedByte" minOccurs="0" />
+                                                    <xs:element name="Nights" type="xs:unsignedByte" minOccurs="0" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="From" type="xs:date" minOccurs="0" />
+                                        <xs:element name="To" type="xs:date" minOccurs="0" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Booking" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="BookingChannel" type="xs:string" minOccurs="0" />
+                                        <xs:element name="BookingNumber" type="xs:string" minOccurs="0" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="TourCategory" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Type" type="xs:string" minOccurs="0" />
+                                        <xs:element name="Activities" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Date" minOccurs="0" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Activity" minOccurs="0" maxOccurs="unbounded">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="Name" type="xs:string" minOccurs="0" />
+                                                                            <xs:element name="Location" type="xs:string" minOccurs="0" />
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="Date" type="xs:date" use="optional" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Itineraries" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Date" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Accommodation" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                                                                <xs:element name="Address" type="xs:string" minOccurs="0" />
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="Transportation" type="xs:string" minOccurs="0" />
+                                                    <xs:element name="VisitingLocations" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Name" minOccurs="0" maxOccurs="unbounded">
+                                                                    <xs:complexType>
+                                                                        <xs:simpleContent>
+                                                                            <xs:extension base="xs:string">
+                                                                                <xs:attribute name="From" type="xs:string" use="optional" />
+                                                                                <xs:attribute name="To" type="xs:string" use="optional" />
+                                                                            </xs:extension>
+                                                                        </xs:simpleContent>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="Meals" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="Meal" minOccurs="0" maxOccurs="unbounded">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="At" type="xs:string" minOccurs="0" />
+                                                                            <xs:element name="Name" type="xs:string" minOccurs="0" />
+                                                                            <xs:element name="Address" type="xs:string" minOccurs="0" />
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="Type" type="xs:string" use="optional" />
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="Date" type="xs:date" use="optional" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="ID" type="xs:unsignedByte" use="optional" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

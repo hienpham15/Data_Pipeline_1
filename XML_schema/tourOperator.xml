@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<TourOperator>
+	<Operation ID="1">
+		<Type OperationType="Inbound">
+		    <From>Spain</From>
+		    <To>France</To>
+		</Type>
+		<Price CurrencyCode="EUR">
+		    <Value>600</Value>
+		</Price>
+		<CurrencyExchangeService>
+		    <IsAvailable>false</IsAvailable>
+		    <From></From>
+		    <To></To>
+		</CurrencyExchangeService>
+		<Insurance>
+		    <HaveInsurance>true</HaveInsurance>
+		    <InsuranceNumber>987654321</InsuranceNumber>
+		</Insurance>
+		<Period>
+		    <Duration>
+                <Days>
+                    3
+                </Days>
+                <Nights>
+                    2
+                </Nights>
+            </Duration>
+		    <From>2022-02-18</From>
+		    <To>2022-02-20</To>
+		</Period>
+		<Booking>
+		    <BookingChannel>Social Medias</BookingChannel>
+		    <BookingNumber>#159753</BookingNumber>
+		</Booking>
+		
+		<TourCategory>
+		    <Type>Culture</Type>
+		    <Activities>
+		        <Date Date="2022-02-18">
+		            <Activity>
+		                <Name>Sculptures dans le jardin du musée Rodin</Name>
+		                <Location>Paris</Location>
+		            </Activity>
+		            
+		            <Activity>
+		                <Name>Les cinémas Lumières</Name>
+		                <Location>Lyon</Location>
+		            </Activity>
+		        </Date>
+		        
+		        <Date Date="2022-02-19">
+		            <Activity>
+		                <Name>Betty Blue</Name>
+		                <Location>Bordeaux</Location>
+		            </Activity>
+		            
+		            <Activity>
+		                <Name>Philharmonie de Paris</Name>
+		                <Location>Ile-de-France</Location>
+		            </Activity>
+		        </Date>
+		        
+		        <Date Date="2022-02-20">
+		            <Activity>
+		                <Name>Conservatoire de Lille</Name>
+		                <Location>Lille</Location>
+		            </Activity>
+		        </Date>
+		    </Activities>
+		</TourCategory>
+		<Itineraries>
+		    <Date Date="2022-02-18">
+		        <Accommodation>
+		            <Name>Hotel des Rois</Name>
+		            <Address>24 Rue Froid, 75015 Paris</Address>
+		        </Accommodation>
+		        <Transportation>Bus</Transportation>
+		        <VisitingLocations>
+		            <Name From="9h00" To="11h00">Tour Eiffel</Name>
+		            
+		            <Name From="13h00" To="15h00">Jardin Luxembourg</Name>
+		            
+		            <Name From="15h00" To="17h00">Musée de Louvre</Name>
+		        </VisitingLocations>
+		        <Meals>
+		            <Meal Type="breakfast">
+		                <At>8h30</At>
+		                <Name>Resto d'hotel</Name>
+		                <Address>24 Rue Froid</Address>
+		            </Meal>
+		            <Meal Type="lunch">
+		                <At>12h00</At>
+		                <Name>Resto A</Name>
+		                <Address>23 avenue B</Address>
+		            </Meal>
+		            
+		            <Meal Type="dinner">
+		                <At>18h00</At>
+		                <Name>Resto B</Name>
+		                <Address>50 rue C</Address>
+		            </Meal>
+		            
+		        </Meals>
+		    </Date>
+		    
+		    <Date Date="2022-02-19">
+		        <Accommodation>
+		            <Name>Hotel Ibis</Name>
+		            <Address>42 Rue Chaud, 29280 Plouzané</Address>
+		        </Accommodation>
+		        <Transportation>TGV and Bus</Transportation>
+		        <VisitingLocations>
+		            <Name From="13h00" To="15h00">Jardin Botanique</Name>
+		            
+		            <Name From="15h00" To="17h00">Plage de Saint Anne</Name>
+		        </VisitingLocations>
+		        <Meals>
+		            <Meal Type="breakfast">
+		                <At>7h30</At>
+		                <Name>Café de la gare</Name>
+		                <Address>4 Rue G</Address>
+		            </Meal>
+		            <Meal Type="lunch">
+		                <At>12h00</At>
+		                <Name>Resto M</Name>
+		                <Address>3 avenue K</Address>
+		            </Meal>
+		            
+		            <Meal Type="dinner">
+		                <At>18h00</At>
+		                <Name>Resto E</Name>
+		                <Address>9bis rue L</Address>
+		            </Meal>
+		            
+		        </Meals>
+		    </Date>
+		    
+		    <Date Date="2022-02-20">
+		        <Accommodation>
+		            <Name>Hotel Centre</Name>
+		            <Address>212 Rue M, Paris</Address>
+		        </Accommodation>
+		        <Transportation>TGV and Bus</Transportation>
+		        <VisitingLocations>
+		            <Name From="9h30" To="10h30">Place de Panthéon</Name>
+		        </VisitingLocations>
+		        <Meals>
+		            <Meal Type="breakfast">
+		                <At>8h30</At>
+		                <Name>Café du jardin</Name>
+		                <Address>10 Rue H</Address>
+		            </Meal>
+		            <Meal Type="lunch">
+		                <At>12h30</At>
+		                <Name>Resto Luxembourg</Name>
+		                <Address>33 avenue M</Address>
+		            </Meal>
+		        </Meals>
+		    </Date>
+		    
+		</Itineraries>
+	</Operation>
+	
+    <Operation ID="2">
+		<Type OperationType="Outbound">
+		    <From>France</From>
+		    <To>Japan</To>
+		</Type>
+		<Price CurrencyCode="EUR">
+		    <Value>3600</Value>
+		</Price>
+		<CurrencyExchangeService>
+		    <IsAvailable>true</IsAvailable>
+		    <From>EUR</From>
+		    <To>YEN</To>
+		</CurrencyExchangeService>
+		<Insurance>
+		    <HaveInsurance>true</HaveInsurance>
+		    <InsuranceNumber>563214789</InsuranceNumber>
+		</Insurance>
+		<Period>
+		    <Duration>
+                <Days>
+                    2
+                </Days>
+                <Nights>
+                    1
+                </Nights>
+            </Duration>
+		    <From>2022-07-26</From>
+		    <To>2022-07-27</To>
+		</Period>
+		<Booking>
+		    <BookingChannel>Third party</BookingChannel>
+		    <BookingNumber>#42865</BookingNumber>
+		</Booking>
+		
+		<TourCategory>
+		    <Type>Nature</Type>
+		    <Activities>
+		        <Date Date="2022-07-26">
+		            <Activity>
+		                <Name>The famous Mount Fuji</Name>
+		                <Location>Tokyo</Location>
+		            </Activity>
+		            
+		            <Activity>
+		                <Name>Lake Kawaguchi</Name>
+		                <Location>Yamanashi</Location>
+		            </Activity>
+		        </Date>
+		        
+		        <Date Date="2022-07-27">
+		            <Activity>
+		                <Name>Iriomote's mangroves</Name>
+		                <Location>Okinawa</Location>
+		            </Activity>
+		        </Date>
+		    </Activities>
+		</TourCategory>
+		
+		<Itineraries>
+		    <Date Date="2022-07-26">
+		        <Accommodation>
+		            <Name>Hotel Tokyo</Name>
+		            <Address>Otemachi Tower 1-5-6, Tokyo</Address>
+		        </Accommodation>
+		        <Transportation>Bus</Transportation>
+		        <VisitingLocations>
+		            <Name From="9h00" To="17h00">Mount Fuji</Name>
+		        </VisitingLocations>
+		        <Meals>
+		            <Meal Type="breakfast">
+		                <At>8h30</At>
+		                <Name>Otemachi Tower</Name>
+		                <Address>Otemachi Tower</Address>
+		            </Meal>
+		            <Meal Type="lunch">
+		                <At>12h00</At>
+		                <Name>During the climbing</Name>
+		                <Address>_</Address>
+		            </Meal>
+		            
+		            <Meal Type="dinner">
+		                <At>18h00</At>
+		                <Name>Kamen Restaurant</Name>
+		                <Address>Tokyo</Address>
+		            </Meal>
+		            
+		        </Meals>
+		    </Date>
+		    
+		    <Date Date="2022-07-27">
+		        <Accommodation>
+		            <Name>Hoshinoya Tokyo</Name>
+		            <Address>1-9-1 Otemachi, Tokyo</Address>
+		        </Accommodation>
+		        <Transportation>Bus</Transportation>
+		        <VisitingLocations>
+		            <Name From="9h00" To="15h00">Lake Kawaguchi</Name>
+		        </VisitingLocations>
+		        <Meals>
+		            <Meal Type="breakfast">
+		                <At>7h30</At>
+		                <Name>Hotel Cafetaria</Name>
+		                <Address>4-5-6 Tokyo</Address>
+		            </Meal>
+		            <Meal Type="lunch">
+		                <At>12h00</At>
+		                <Name>Lake restaurant</Name>
+		                <Address>Lake Kawaguchi</Address>
+		            </Meal>
+		        </Meals>
+		    </Date>
+		</Itineraries>
+	</Operation>
+
+    <Operation ID="3">
+		<Type OperationType="Domestic">
+		    <From>France(Domestic)</From>
+		    <To>France(Domestic)</To>
+		</Type>
+		<Price CurrencyCode="EUR">
+		    <Value>200</Value>
+		</Price>
+		<CurrencyExchangeService>
+		    <IsAvailable>false</IsAvailable>
+		    <From>_</From>
+		    <To>_</To>
+		</CurrencyExchangeService>
+		<Insurance>
+		    <HaveInsurance>true</HaveInsurance>
+		    <InsuranceNumber>852314697</InsuranceNumber>
+		</Insurance>
+		<Period>
+		    <Duration>
+                <Days>
+                    1
+                </Days>
+                <Nights>
+                    1
+                </Nights>
+            </Duration>
+		    <From>2022-04-01</From>
+		    <To>2022-04-02</To>
+		</Period>
+		<Booking>
+		    <BookingChannel>Third party</BookingChannel>
+		    <BookingNumber>#42865</BookingNumber>
+		</Booking>
+		
+		<TourCategory>
+		    <Type>Wellness</Type>
+		    <Activities>
+		        <Date Date="2022-04-01">
+		            <Activity>
+		                <Name>Thalasso therapy At Thalazur Royan</Name>
+		                <Location>Royan, Bordeaux</Location>
+		            </Activity>
+		            
+		            <Activity>
+		                <Name>Thalasso therapy At Ibis Le Touquet</Name>
+		                <Location>Nord-Pas-de-Calais, Le Touquet</Location>
+		            </Activity>
+		            
+		            <Activity>
+		                <Name>Thalasso therapy At Mercure Frejus</Name>
+		                <Location>Provence-Alpes Côte-d'Azur</Location>
+		            </Activity>
+		        </Date>
+		    </Activities>
+		</TourCategory>
+		
+		<Itineraries>
+		    <Date Date="2022-04-01">
+		        <Accommodation>
+		            <Name>Alliance Pornic</Name>
+		            <Address>Pays de Loire, Pornic, Nantes</Address>
+		        </Accommodation>
+		        <Transportation>Bus</Transportation>
+		        <VisitingLocations>
+		            <Name From="9h00" To="17h00">Thalasso therapy</Name>
+
+		        </VisitingLocations>
+		        <Meals>
+		            <Meal Type="breakfast">
+		                <At>8h30</At>
+		                <Name>Alliance Pornic</Name>
+		                <Address>Pays de Loire, Pornic, Nantes</Address>
+		            </Meal>
+		        </Meals>
+		    </Date>
+		</Itineraries>
+	</Operation>
+</TourOperator>
