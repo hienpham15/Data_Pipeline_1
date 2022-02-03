@@ -1,0 +1,24 @@
+﻿{
+	"Type": ["Inbound", {
+		"From": "Spain",
+		"To": "France"
+	}],
+	"Price": ["EUR", 600],
+	"CurrencyExchangeService": {
+		"IsAvailable": false,
+		"From": "",
+		"To": ""
+	},
+	"Insurance": {
+		"HaveInsurance": true,
+		"InsuranceNumber": "987654321"
+	},
+	"Period": {
+		"Duration": {
+			"Days": 3,
+			"Nights": 2
+		},
+		"From": "2022-02-18",
+		"To": "2022-02-20"
+	}
+}

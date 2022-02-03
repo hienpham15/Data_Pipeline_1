@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Type": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "From": {
+              "type": "string"
+            },
+            "To": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "From",
+            "To"
+          ]
+        }
+      ]
+    },
+    "Price": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "CurrencyExchangeService": {
+      "type": "object",
+      "properties": {
+        "IsAvailable": {
+          "type": "boolean"
+        },
+        "From": {
+          "type": "string"
+        },
+        "To": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "IsAvailable",
+        "From",
+        "To"
+      ]
+    },
+    "Insurance": {
+      "type": "object",
+      "properties": {
+        "HaveInsurance": {
+          "type": "boolean"
+        },
+        "InsuranceNumber": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "HaveInsurance",
+        "InsuranceNumber"
+      ]
+    },
+    "Period": {
+      "type": "object",
+      "properties": {
+        "Duration": {
+          "type": "object",
+          "properties": {
+            "Days": {
+              "type": "integer"
+            },
+            "Nights": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "Days",
+            "Nights"
+          ]
+        },
+        "From": {
+          "type": "string"
+        },
+        "To": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Duration",
+        "From",
+        "To"
+      ]
+    }
+  },
+  "required": [
+    "Type",
+    "Price",
+    "CurrencyExchangeService",
+    "Insurance",
+    "Period"
+  ]
+}
+
